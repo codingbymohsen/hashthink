@@ -1,4 +1,4 @@
-import App from "@/components/pages/ticket";
+import App from "@/components/pages/profile";
 
 export default function TicketPage() {
   return <App />;

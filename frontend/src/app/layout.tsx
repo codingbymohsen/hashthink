@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 
 import type { Metadata } from "next";
 
-import { Header, Menu } from "@/components/layouts";
 import { cn } from "@/utils/cn";
 import { poppins } from "@/utils/fonts";
 

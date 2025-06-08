@@ -22,21 +22,7 @@
         "endOfLine": "auto"
       }
     ],
-    "import/no-unresolved": [2, { "ignore": ["\\/css/*"] }],
-    "simple-import-sort/imports": [
-      "error",
-      {
-        "groups": [
-          ["^react$"],
-          ["^@?\\w"],
-          ["^(@|components)(/.*|$)"],
-          ["^\\u0000"],
-          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
-          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-          ["^.+\\.?(css)$"]
-        ]
-      }
-    ]
+    "import/no-unresolved": [2, { "ignore": ["\\/css/*"] }]
   },
   "overrides": [
     {

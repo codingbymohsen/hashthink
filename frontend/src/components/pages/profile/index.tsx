@@ -13,6 +13,7 @@ import Modal from "../../common/modals/base-modal";
 import StatusText from "../../common/status/status-text";
 import FlagIcon from "../../common/flags/flag";
 import { getSocket } from "../../../socket";
+import { IndiaFlag, IranFlag, UsFlag } from "../../common/flags/flag-icons";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +115,7 @@ export default function App() {
                 className="flex flex-col items-center gap-1 rounded-2xl border-2 border-gray-300 p-20"
                 onClick={() => refetch("usd")}
               >
-                <img src="/images/usd.png" alt="usd" />
+                <UsFlag size="60" />
                 <p className="font-bold uppercase">usd</p>
                 <p className="text-sm text-amber-900 underline">1 Account</p>
               </div>
@@ -122,7 +123,7 @@ export default function App() {
                 className="flex flex-col items-center gap-1 rounded-2xl border-2 border-gray-300 p-20"
                 onClick={() => refetch("irr")}
               >
-                <img src="/images/usd.png" alt="usd" />
+                <IranFlag size="513" />
                 <p className="font-bold uppercase">irr</p>
                 <p className="text-sm text-amber-900 underline">1 Account</p>
               </div>
@@ -130,7 +131,7 @@ export default function App() {
                 className="flex flex-col items-center gap-1 rounded-2xl border-2 border-gray-300 p-20"
                 onClick={() => refetch("inr")}
               >
-                <img src="/images/usd.png" alt="usd" />
+                <IndiaFlag size="40" />
                 <p className="font-bold uppercase">inr</p>
                 <p className="text-sm text-amber-900 underline">1 Account</p>
               </div>

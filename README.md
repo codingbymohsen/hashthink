@@ -1,6 +1,6 @@
 # Hashthink Full-stack Test
 
-This is a full-stack project built for the Hashthink technical assessment. It features a single-page dashboard with React, TailwindCSS, and a NestJS backend.
+This is a full-stack project built for the Hashthink technical assessment. It features a single-page dashboard with React, Nextjs, TailwindCSS, and a NestJS backend.
 
 ---
 
@@ -33,6 +33,31 @@ This is a full-stack project built for the Hashthink technical assessment. It fe
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/hashthink-fullstack-test.git
+git clone https://github.com/codingbymohsen/hashthink.git
 cd hashthink-fullstack-test
+```
+
+## run mongodb on docker
+
+```
+docker compose up -d
+```
+
+# run front end
+
+```
+npm run dev
+```
+
+# run backend
+
+```
+npm install
+npm run start:dev
+```
+
+# seed the mongodb
+
+```
+npm run seed:transaction
 ```

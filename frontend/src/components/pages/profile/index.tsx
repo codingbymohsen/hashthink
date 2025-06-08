@@ -217,7 +217,17 @@ export default function App() {
                 </p>
                 <div className="flex w-[120px]">
                   <p className="w-[50px] text-blue-800">View</p>
-                  <p className="w-[50px] text-orange-400 underline">Download</p>
+                  <button
+                    className="w-[50px] text-orange-400 underline"
+                    onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = "/sample.docx";
+                      link.download = "sample.docx";
+                      link.click();
+                    }}
+                  >
+                    Download
+                  </button>
                 </div>
               </div>
             ))}

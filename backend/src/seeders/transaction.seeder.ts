@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { TransactionsService } from '../transactions/transactions.service';
 import { Transaction } from '../transactions/transactions.schema';
-import { CreateTransactionDto } from '../transactions/dto/create-transaction.dto';
+import { CreateTransactionDto, CurrencyEnum } from '../transactions/dto/create-transaction.dto';
 
 async function bootstrap() {
 	const app = await NestFactory.createApplicationContext(AppModule);
@@ -19,7 +19,7 @@ async function bootstrap() {
 				country: 'US',
 			},
 			status: 'Approved',
-			currency: 'usd',
+			currency: CurrencyEnum.USD,
 		},
 		{
 			referenceNumber: 'TXN002',
@@ -31,7 +31,7 @@ async function bootstrap() {
 				country: 'US',
 			},
 			status: 'Pending',
-			currency: 'usd',
+			currency: CurrencyEnum.USD,
 		},
 		{
 			referenceNumber: 'TXN001',
@@ -43,7 +43,7 @@ async function bootstrap() {
 				country: 'US',
 			},
 			status: 'Approved',
-			currency: 'irr',
+			currency: CurrencyEnum.IRR,
 		},
 		{
 			referenceNumber: 'TXN001',
@@ -55,7 +55,7 @@ async function bootstrap() {
 				country: 'US',
 			},
 			status: 'Approved',
-			currency: 'inr',
+			currency: CurrencyEnum.INR,
 		},
 		{
 			referenceNumber: 'TXN001',
@@ -67,7 +67,7 @@ async function bootstrap() {
 				country: 'US',
 			},
 			status: 'Approved',
-			currency: 'inr',
+			currency: CurrencyEnum.INR,
 		},
 	];
 

@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export interface IPayment {
+export class IPayment {
 	amount: number;
 	country: string;
 }

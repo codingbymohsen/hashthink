@@ -4,6 +4,11 @@ This is a full-stack project built for the Hashthink technical assessment. It fe
 
 ---
 
+## Screen shots
+
+![Accounts](./screen-shots/Screenshot1.png)
+![Transaction list](./screen-shots/Screenshot2.png)
+
 ## 📦 Tech Stack
 
 ### Frontend:
